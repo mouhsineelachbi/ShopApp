@@ -1,6 +1,6 @@
-# ecommerce
+# ShopApp Ecommerce
 
-Ecommerce Application
+Ecommerce Application for cloths and accessories shopping
 
 ## Getting Started
 
