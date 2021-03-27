@@ -18,6 +18,27 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+
+    Widget image_carousel = new Container(
+      height: 200.0,
+      child: new Carousel(
+        boxFit: BoxFit.cover,
+        images: [
+          AssetImage("images/c1.jpg"),
+          AssetImage("images/m1.jpeg"),
+          AssetImage("images/m2.jpg"),
+          AssetImage("images/w1.jpeg"),
+          AssetImage("images/w3.jpeg"),
+        ],
+        autoplay: true,
+        animationCurve: Curves.fastOutSlowIn,
+        animationDuration: Duration(milliseconds: 2000),
+        dotSize: 4.0,
+        dotBgColor: Colors.black.withOpacity(0.0),
+        indicatorBgPadding: 8.0,
+      )
+    );
+
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
@@ -110,6 +131,11 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
+      ),
+      body: new ListView(
+        children: [
+          image_carousel,
+        ],
       ),
     );
   }
