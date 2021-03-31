@@ -1,3 +1,4 @@
+import 'package:ecommerce/pages/product_details.dart';
 import "package:flutter/material.dart";
 
 
@@ -22,7 +23,18 @@ class Product extends StatelessWidget {
         tag: product_name,
         child: Material(
           child: InkWell(
-            onTap: (){},
+            onTap: (){
+              Navigator.of(context).push(
+                 new MaterialPageRoute(
+                  builder: (context) => new ProductDetails(
+                    product_details_name: product_name,
+                    product_details_picture: product_picture,
+                    product_details_new_price: product_price,
+                    product_details_old_price: product_old_price,
+                  )
+              ),
+              );
+            },
             child: GridTile(
               footer: Container(
                 color: Colors.white70,
