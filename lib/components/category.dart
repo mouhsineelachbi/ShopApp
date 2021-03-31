@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Category extends StatelessWidget {
@@ -14,10 +15,10 @@ class Category extends StatelessWidget {
       child: InkWell(
         onTap: (){},
         child: Container(
-          width: 100.0,
+          width: 129.0,
           child: ListTile(
             title: Image.asset(image_location, width: 100.0, height: 80.0,),
-            subtitle: Text(image_caption,style: TextStyle(fontSize: 16),),
+            subtitle: Padding(padding: EdgeInsets.all(10.0),child: Row(mainAxisAlignment: MainAxisAlignment.center,children: <Widget>[Text(image_caption)],)),
           ),
         ),
       ),
