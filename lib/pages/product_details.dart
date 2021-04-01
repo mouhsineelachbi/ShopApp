@@ -64,7 +64,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                     ),
                   ),
                   title: Align(
-                    alignment: Alignment(0, -4),
+                    alignment: Alignment(0, -0.2),
                     child: new Row(
                       children: [
                         Expanded(
