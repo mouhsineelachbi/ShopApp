@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         elevation: 0.0,
         backgroundColor: Colors.red,
-        title: Text("ISSWA COMMERCE"),
+        title: Text("ISSWA Fashion"),
         actions: [
           new IconButton(
             icon: Icon(
