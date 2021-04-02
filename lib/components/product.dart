@@ -38,23 +38,17 @@ class Product extends StatelessWidget {
             child: GridTile(
               footer: Container(
                 color: Colors.white70,
-                child: ListTile(
-                  leading: Text(
-                    product_name,
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  title: Text(
-                    "$product_price MAD",
-                    style: TextStyle(color: Colors.red, fontSize: 20.0),
-                  ),
-                  subtitle: Text(
-                    "${product_old_price} MAD",
-                    style: TextStyle(
-                      color: Colors.black54,
-                      fontWeight: FontWeight.w800,
-                      decoration: TextDecoration.lineThrough
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 1,
+                      child: Text("${product_name}"),
                     ),
-                  ),
+                    Expanded(
+                      flex: 2,
+                      child: Text("${product_price} MAD", style: TextStyle(color: Colors.red),),
+                    ),
+                  ],
                 ),
               ),
               child: Image.asset(
