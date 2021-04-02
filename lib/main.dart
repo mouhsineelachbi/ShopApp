@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage> {
               onTap: (){},
               child: ListTile(
                 title: Text("Settings"),
-                leading: Icon(Icons.settings, color: Colors.red,),
+                leading: Icon(Icons.settings,),
               ),
             ),
             InkWell(
