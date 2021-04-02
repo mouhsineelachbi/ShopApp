@@ -21,6 +21,26 @@ class _ShoppingCartState extends State<ShoppingCart> {
         ),
         ],
       ),
+      bottomNavigationBar: new Container(
+        color: Colors.white,
+        child: Row(
+          children: [
+            Expanded(
+              child: ListTile(
+                title: Text("Total : "),
+                subtitle: Text("230 MAD"),
+              ),
+            ),
+            Expanded(
+              child: new MaterialButton(
+                onPressed: (){},
+                child: Text("Check out", style: TextStyle(color: Colors.white),),
+                color: Colors.red,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
