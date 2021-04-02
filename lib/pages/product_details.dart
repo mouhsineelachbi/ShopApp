@@ -25,7 +25,7 @@ class _ProductDetailsState extends State<ProductDetails> {
       appBar: AppBar(
         elevation: 0.0,
         backgroundColor: Colors.red,
-        title: Text("Eco App"),
+        title: Text("ISSWA Fashion"),
         actions: [
           new IconButton(
             icon: Icon(
