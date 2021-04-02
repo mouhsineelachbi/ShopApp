@@ -44,6 +44,7 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         elevation: 0.0,
         backgroundColor: Colors.red,
         title: Text("ISSWA Fashion"),

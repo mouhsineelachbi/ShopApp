@@ -1,3 +1,5 @@
+import 'package:ecommerce/components/similar_product.dart';
+import 'package:ecommerce/components/similar_products_list.dart';
 import 'package:ecommerce/main.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +26,7 @@ class _ProductDetailsState extends State<ProductDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         elevation: 0.0,
         backgroundColor: Colors.red,
         title: InkWell(
@@ -197,9 +200,19 @@ class _ProductDetailsState extends State<ProductDetails> {
               Padding(
                 padding: EdgeInsets.all(5.0),
                 //Todo: Add product condition
-                child: new Text("Condition"),
+                child: new Text("New"),
               ),
             ],
+          ),
+          Divider(),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text("Similar Products"),
+          ),
+// Similat products
+          Container(
+            height: 360,
+            child: SimilarProductList(),
           ),
         ],
       ),
