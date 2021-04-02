@@ -38,6 +38,7 @@ class _HomePageState extends State<HomePage> {
         dotSize: 4.0,
         dotBgColor: Colors.black.withOpacity(0.0),
         indicatorBgPadding: 8.0,
+        dotColor: Colors.transparent,
       )
     );
 

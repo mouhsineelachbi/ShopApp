@@ -41,7 +41,7 @@ class Product extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(
-                      flex: 1,
+                      flex: 2,
                       child: Text("${product_name}", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),),
                     ),
                     Expanded(

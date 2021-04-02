@@ -10,49 +10,49 @@ class _ProductListState extends State<ProductList> {
 
   var product_list = [
     {
-      "name": "Blazer",
+      "name": "Male Blazer",
       "picture": "images/products/blazer1.jpeg",
       "old_price": 120,
       "price": 90
     },
     {
-      "name": "Blazer",
+      "name": "Female Blazer",
       "picture" : "images/products/blazer2.jpeg",
       "old_price": 120,
       "price": 90
     },
     {
-      "name": "Dress",
+      "name": "Red Dress",
       "picture" : "images/products/dress1.jpeg",
       "old_price": 120,
       "price": 90
     },
     {
-      "name": "Dress",
+      "name": "Black Dress",
       "picture" : "images/products/dress2.jpeg",
       "old_price": 120,
       "price": 90
     },
     {
-      "name": "Hills",
+      "name": "Black Hills",
       "picture" : "images/products/hills1.jpeg",
       "old_price": 120,
       "price": 90
     },
     {
-      "name": "Hills",
+      "name": "Red Hills",
       "picture" : "images/products/hills2.jpeg",
       "old_price": 120,
       "price": 90
     },
     {
-      "name": "Pants",
+      "name": "Black Pants",
       "picture" : "images/products/pants1.jpg",
       "old_price": 120,
       "price": 90
     },
     {
-      "name": "Pants",
+      "name": "Grey Pants",
       "picture" : "images/products/pants2.jpeg",
       "old_price": 120,
       "price": 90
@@ -70,7 +70,7 @@ class _ProductListState extends State<ProductList> {
       "price": 90
     },
     {
-      "name": "Skirt",
+      "name": "Pink Skirt",
       "picture" : "images/products/skt2.jpeg",
       "old_price": 120,
       "price": 90
