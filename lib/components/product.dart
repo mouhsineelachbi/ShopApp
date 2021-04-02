@@ -42,11 +42,11 @@ class Product extends StatelessWidget {
                   children: [
                     Expanded(
                       flex: 1,
-                      child: Text("${product_name}"),
+                      child: Text("${product_name}", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),),
                     ),
                     Expanded(
                       flex: 2,
-                      child: Text("${product_price} MAD", style: TextStyle(color: Colors.red),),
+                      child: Text("${product_price} MAD", style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),),
                     ),
                   ],
                 ),
