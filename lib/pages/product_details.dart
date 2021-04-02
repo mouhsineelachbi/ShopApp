@@ -158,6 +158,50 @@ class _ProductDetailsState extends State<ProductDetails> {
               IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border, color: Colors.red,)),
             ],
           ),
+          Divider(),
+          ListTile(
+            title: new Text("Product details"),
+            subtitle: new Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lorem eget turpis sagittis scelerisque. Aenean elit neque, vestibulum at luctus sed, tempor nec eros. Ut ac orci turpis. Praesent luctus dapibus lorem, volutpat elementum est egestas vel. Etiam sit amet fermentum libero. Donec at interdum sem, a iaculis neque. Donec sollicitudin purus libero, ut rutrum lectus faucibus id. Fusce blandit purus lobortis dolor porta ullamcorper. Phasellus placerat varius maximus. Curabitur facilisis elit sed leo sagittis, cursus dignissim risus ultricies. Integer quis scelerisque justo. Praesent gravida sapien at lacus pharetra, nec rhoncus libero ultricies. Cras tincidunt est euismod leo semper tincidunt. Curabitur pretium mi neque, ut viverra nibh sollicitudin non"),
+          ),
+          Divider(),
+          Row(
+            children: [
+              Padding(
+                padding: EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),
+                child: new Text("Product name", style: TextStyle(color: Colors.grey),),
+              ),
+              Padding(
+                padding: EdgeInsets.all(5.0),
+                child: new Text("${widget.product_details_name}"),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Padding(
+                padding: EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),
+                child: new Text("Product brand", style: TextStyle(color: Colors.grey),),
+              ),
+              Padding(
+                padding: EdgeInsets.all(5.0),
+                //Todo: Create product brand
+                child: new Text("Brand X "),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Padding(
+                padding: EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),
+                child: new Text("Product condition", style: TextStyle(color: Colors.grey),),
+              ),
+              Padding(
+                padding: EdgeInsets.all(5.0),
+                //Todo: Add product condition
+                child: new Text("Condition"),
+              ),
+            ],
+          ),
         ],
       ),
     );
