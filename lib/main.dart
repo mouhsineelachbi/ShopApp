@@ -1,3 +1,4 @@
+import 'package:ecommerce/pages/shopping_cart.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:ecommerce/components/horizontal_list.dart';
@@ -61,7 +62,9 @@ class _HomePageState extends State<HomePage> {
               Icons.shopping_cart,
               color: Colors.white,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=> new ShoppingCart()));
+            },
           ),
         ],
       ),
@@ -105,7 +108,9 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             InkWell(
-              onTap: (){},
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=> new ShoppingCart()));
+              },
               child: ListTile(
                 title: Text("Shopping Cart"),
                 leading: Icon(Icons.shopping_cart, color: Colors.red,),
