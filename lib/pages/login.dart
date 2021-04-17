@@ -25,7 +25,16 @@ class _LoginState extends State<Login> {
   }
 
   void isSignIn() async {
+    setState(() {
+      Loading = true;
+    });
 
+    preferences = await SharedPreferences.getInstance();
+    isLogedin = await googleSignIn.isSignedIn();
+
+    if(isLogedin) {
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (){}))
+    }
   }
 
   @override

@@ -3,6 +3,8 @@ import 'package:ecommerce/components/similar_products_list.dart';
 import 'package:ecommerce/main.dart';
 import 'package:flutter/material.dart';
 
+import 'home.dart';
+
 class ProductDetails extends StatefulWidget {
 
   final product_details_name;
