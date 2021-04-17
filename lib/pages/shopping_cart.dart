@@ -1,3 +1,4 @@
+import 'package:ecommerce/components/cart_product_list.dart';
 import 'package:flutter/material.dart';
 
 class ShoppingCart extends StatefulWidget {
@@ -21,6 +22,7 @@ class _ShoppingCartState extends State<ShoppingCart> {
         ),
         ],
       ),
+      body: new CartProductList(),
       bottomNavigationBar: new Container(
         color: Colors.white,
         child: Row(
