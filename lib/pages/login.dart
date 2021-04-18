@@ -1,3 +1,4 @@
+import 'package:ecommerce/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -33,8 +34,13 @@ class _LoginState extends State<Login> {
     isLogedin = await googleSignIn.isSignedIn();
 
     if(isLogedin) {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (){}))
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomePage()));
     }
+
+    setState(() {
+      Loading = false;
+    });
+
   }
 
   @override
